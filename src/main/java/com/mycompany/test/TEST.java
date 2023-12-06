@@ -11,6 +11,17 @@ package com.mycompany.test;
 public class TEST {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+       que q = new que();
+       q.enque(1);
+       q.enque(23);
+       q.enque(43);
+       q.enque(43);
+       q.enque(83);
+       q.enque(3);
+       q.deque();
+       q.deque();
+       q.deque();
+       q.display();
+      
     }
 }

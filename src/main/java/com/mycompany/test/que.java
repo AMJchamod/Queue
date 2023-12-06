@@ -32,23 +32,26 @@ public class que {
          }
       void enque(int element){
            if(isfull()){
-               System.out.println("que is full");
-           }else{
-               if(front==-1){
-                   front=0;
-                   rear++;
-                   items[rear]= element;
-                   System.out.println("inserted"+element);
-                           
-               }
-           }       
+                 System.out.println("que is full");
+              }else{
+                 if(front==-1)
+                     front =0;
+                     rear++;
+                     items[rear]=element;
+                     System.out.println("insert"+element);
+                     
+                 
+           }
+               
       }
+           
+      
        int deque(){
            int element;
            if(isempty()){
                System.out.println("que is empty");
                return -1;
-           }else{
+           } else{
                element = items[front];
                if(front>=rear){
                    front=-1;
@@ -66,9 +69,11 @@ public class que {
                     if (isempty()){
                         System.out.println("que is empty");
                     }
-                 for(int i =front;i<=rear;i++){
-                     System.out.println("fornt element are"+items[i]);
-                 }
+                     System.out.println("fornt values");
+                      for(int i =front;i<=rear;i++){
+                          System.out.println(items[i]);
+                      }
+                           System.out.println("rear element" +rear);
              }
          
   }
